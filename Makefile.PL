@@ -1,6 +1,6 @@
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+use 5.008;
+
 WriteMakefile(
     NAME         => 'Acme::RemoteINC',
     VERSION_FROM => 'lib/Acme/RemoteINC.pm', # finds $VERSION

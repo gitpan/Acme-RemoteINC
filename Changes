@@ -8,4 +8,6 @@ Revision history for Perl module Acme::RemoteINC
 0.12  Sun Jun 12 19:12:10 2004
     - Added ref option to perl_root argument to new
 
+0.13 Makefile.PL revision
+
 
