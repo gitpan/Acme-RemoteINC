@@ -6,5 +6,5 @@ WriteMakefile(
     VERSION_FROM => 'lib/Acme/RemoteINC.pm', # finds $VERSION
     AUTHOR       => 'William Hererra (whererra@skylightview.com)',
     ABSTRACT     => 'Slowest Possible Module Loading',
-    PREREQ_PM    => { Net::FTP => 0, Tie::FTP => 0, Test::Simple => 0 },
+    PREREQ_PM    => { Net::FTP => 0, File::Temp => 0, Test::Simple => 0 },
 );
