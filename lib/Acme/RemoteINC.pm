@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Net::FTP;
 use File::Temp;
-our $VERSION = 0.13;
+our $VERSION = 0.15;
 
 sub new { 
     my($class, %args) = @_;
@@ -113,9 +113,9 @@ Alternative: may be a reference to an array of such module directories.
         
 ftp => $ftp
      
-When given as an argument, this overrides use of the other arguments.
-ftp is then expected to be a Net::FTP object which has already been 
-logged in and pointed to the proper Perl root library directory.
+When given as an argument, this overrides use of the otherwise required 
+arguments. ftp is then expected to be a Net::FTP object which has already 
+been logged in.
 
    NOTE: It is advisable that the call to new be done in a BEGIN block. 
    It is also advisable to load Acme::RemoteINC via require in the BEGIN block.
@@ -133,11 +133,11 @@ loading modules via hooks to Net::FTP may well be fatally flawed. Enjoy :).
 
 =head1 SEE ALSO
 
-=head2 B<Acme::Everything>
+=head2 L<Acme::Everything>
 
-=head2 B<Net::FTP>
+=head2 L<Net::FTP>
 
-=head2 B<Tie::FTP>
+=head2 L<Tie::FTP>
 
 =cut
 
